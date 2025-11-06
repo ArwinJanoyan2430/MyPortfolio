@@ -51,7 +51,7 @@ const Navbar = () => {
           <li><a href="#contact"
         onClick={(e) => {
           e.preventDefault(); // prevent default navigation
-          alert("Projects section is coming soon!");
+          alert("Contact section is coming soon!");
         }}>CONTACT</a></li>
           <li id="resume"><a href="../public/arwin-resume.pdf" download = "arwin-resume.pdf">RESUME</a></li>
         </ul>
