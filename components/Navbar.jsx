@@ -53,7 +53,7 @@ const Navbar = () => {
           e.preventDefault(); // prevent default navigation
           alert("Projects section is coming soon!");
         }}>CONTACT</a></li>
-          <li id="resume"><a href="../public/resume.pdf" download = "Arwin Janoyan-RESUME.pdf">RESUME</a></li>
+          <li id="resume"><a href="../public/arwin-resume.pdf" download = "arwin-resume.pdf">RESUME</a></li>
         </ul>
       </nav>
     </header>
