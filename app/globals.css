@@ -80,8 +80,8 @@ li a:hover {
 
     /* GIF background */
     background-image: url('../assets/LCPT.gif');
-    background-size: 1500px 1000px;
-    background-position: 45% 50%;  /* centers the GIF *//* prevents tiling */
+    background-size: cover;
+    background-position: cover;  /* centers the GIF *//* prevents tiling */
     background-repeat: no-repeat;
 
     /* web animation */
