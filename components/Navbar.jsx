@@ -43,9 +43,17 @@ const Navbar = () => {
       <nav>
         <ul>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li id="resume"><a href="#">RESUME</a></li>
+          <li><a href="#projects"
+        onClick={(e) => {
+          e.preventDefault();
+          alert("Projects section is coming soon!");
+        }}>PROJECTS</a></li>
+          <li><a href="#contact"
+        onClick={(e) => {
+          e.preventDefault(); // prevent default navigation
+          alert("Projects section is coming soon!");
+        }}>CONTACT</a></li>
+          <li id="resume"><a href="../public/resume.pdf" download = "Arwin Janoyan-RESUME.pdf">RESUME</a></li>
         </ul>
       </nav>
     </header>
