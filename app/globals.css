@@ -32,18 +32,23 @@ header {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 35px;
     color: white;
+    font-weight: 700;
+    
 }
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
     font-size: 20px;
-    margin: 10px;
+    margin: 15px;
+    font-size: 16px;
+  font-weight: 500;
+  color: white;
 }
 
 li a {
@@ -51,7 +56,7 @@ li a {
     transition: all 0.4s;
     position: relative;
     border: 2px solid transparent;
-    color: white;
+
 }
 
 li a:hover {
@@ -69,7 +74,7 @@ li a:hover {
     border: 2px solid #00e1ff;
     box-shadow: 0 0 10px 5px rgba(0, 225, 255, 0.37);
     background-color: rgba(0, 0, 0, 0.54);
-    color: white;
+    
 }
 
 .Home {
@@ -107,10 +112,17 @@ li a:hover {
     align-items: center;
     gap: 50px;
     flex-wrap: nowrap;
-    margin-left: -300px;
     background-color: transparent;
 }
+.description {
+    color: white;
+    max-width: 450px;
 
+  line-height: 2;
+  text-align: left;
+  font-size: 18px;
+  white-space: nowrap;
+}
 .profile {
 
     object-fit: cover;
@@ -121,7 +133,7 @@ li a:hover {
     border-top: #ffffff solid 4px;
     border-right: #ffffff solid 5px;
     margin: 0 auto;
-    
+    align-items: center;
    
 }
 .profile:hover {
@@ -142,7 +154,7 @@ li a:hover {
 .typing-text {
     font-size: 3rem;
     position: relative;
-    height: 4em;
+    min-height: 200px;
 }
 
 .typing-text span {
@@ -151,6 +163,9 @@ li a:hover {
     left: 0;
     opacity: 0;
     animation: fadeInOut 12s infinite;
+    white-space: nowrap; /* ← ADD THIS to prevent line breaks */
+    width: 100%; /* ← ADD THIS to ensure full width */
+    text-align: left; /* ← ADD THIS to center the text */
 }
 
 .typing-text span:nth-child(1) { animation-delay: 0s; }
@@ -167,18 +182,14 @@ li a:hover {
 /* ===== About Me Section ===== */
 .about-section {
     width: 100%;
-    min-height: 100vh;        /* full viewport height */
+    min-height: 100vh;
     display: flex;
-    justify-content: center;   /* horizontal centering */
-    align-items: center;       /* vertical centering */
+    justify-content: center;
+    align-items: center;
     background-color: #000000;
-    
 }
 
-
 .about-container {
-
-    
     color: #fff;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -200,42 +211,76 @@ li a:hover {
 }
 
 .about-container p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom:20px;
 }
 
 .about-container strong {
     color: #00e1ff;
 }
-.space {
-    color: rgba(49, 49, 49, 0.432);;
-}
-.about-container .card {
+
+.about-container .card1 {
     background: rgba(49, 49, 49, 0.432);
-    padding: 30px 40px;
+    padding: 30px 50px;
     border-radius: 70px;
     box-shadow: 0 0 20px rgba(0, 183, 255, 0.836);
     width: 80%;
-    max-width: 900px;          /* prevents it from stretching too wide */
-    margin: 0 auto;            /* centers the card */
-    transition: transform 0.3s ease;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #ccc;
-    
-}
-.card:hover{
-    transform: scale(1.05);
-    transition: transform 0.10s ease;
-    box-shadow: 0 0 50px rgb(0, 153, 255);
-    transition: transform 0.7s ease, box-shadow 0.3s ease;
+
 }
 
-.about-content{
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 30px;
+.card1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px rgb(0, 153, 255);
+}
+
+.about-container .card2 {
+    background: rgba(0, 0, 0, 0.432);
+    padding: 30px 40px;
+    width: 80%;
+    
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ccc;
+    margin-top: 0px;
+    font-size: 1rem;
+
+}
+
+.card2 .offer{
+    text-align: center;
+}
+.card2 h4, .card2 .bullet{
+    text-align: center;
+}
+.about-container .card3 {
+    background: rgba(49, 49, 49, 0.432);
+    padding: 30px 50px;
+    border-radius: 70px;
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.836);
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ccc;
+    margin-top: 25px;
+}
+
+.card3:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px rgb(0, 153, 255);
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 30px;
 }
 
 .about-img {
@@ -243,8 +288,47 @@ li a:hover {
     filter: brightness(0.9);
     margin: 0 auto;
     background-color: transparent;
+    margin-top: -50px;
+
 }
 
+/* Fix for the content layout */
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure proper text alignment */
+.paragraph {
+    text-align: left;
+    line-height: 1.7;
+}
+
+/* Fix list styling */
+.card2 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card2 li {
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+
+.card2 li strong {
+    color: #00e1ff;
+    display: inline-block;
+    margin-right: 5px;
+}
 
 @keyframes fadeInUp {
     to {
@@ -253,43 +337,51 @@ li a:hover {
     }
 }
 
-
 /* ===== Responsive ===== */
 /* ✅ MOBILE FIXES */
-@media (max-width: 480px) {
-
+@media (max-width: 1200px) {
     /* ===== NAVBAR ===== */
     header {
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
-        gap: 2;
-        padding: 40px;
+        gap: 10px;
+        padding: 20px;
         text-align: center;
-    }
-    h1{
-        font-size: 21px;
     }
     
-    .title{
+    h1 {
+        font-size: 23px;
+    }
+    
+    .title {
         text-align: center;
         margin-top: -8px;
+        font-size: 0.9rem;
     }
+    
     nav ul {
- 
         gap: 15px;
         font-size: 10px;
-        margin: 10;
+        margin: 10px 0;
         padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
+    
+    .description {
+        font-size: 10px;
+        max-width: 100%;
+        margin: 300px auto 0 auto;
+        text-align: center;
+    }
+    
     li a:hover {
-        padding: 3px; /* smaller hover padding so it doesn't jump */
+        padding: 3px;
     }
-
 
     /* ===== HOME SECTION ===== */
     .flex-container {
-        flex-direction: column;      /* stack image + text */
+        flex-direction: column;
         align-items: center;
         gap: 10px;
         margin: 0;
@@ -297,88 +389,141 @@ li a:hover {
     }
 
     .profile {
-        width: 140px;                /* resize image */
+        width: 140px;
         height: 180px;
         border-radius: 20px;
-        margin: 0 auto;
+        margin-top: 50px;
         object-fit: cover;
         filter: brightness(0.8);
+        
     }
 
     .typing-text {
-        font-size: 1rem;             /* reduce text size */
-        height: auto;
+        font-size: 1rem;
+        height: 200px;
         text-align: center;
-        display: inline-block;
+        align-items: center;
         width: 200px;
+        margin-top: -250;
     }
 
     .text-container {
-        max-width: 90%;
+        max-width: 60%;
         text-align: center;
         align-items: center;
+        
     }
-.Home{
-    background-size: 1000px 700px;
-
-}
-
-
-.about-container {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-
-}
-
-.about-content{
-    flex-direction: column;
-}
-.about-img{
-    width: auto;
-    height: auto;
-}
-
-.card {
- width: 100%;
-
-  padding: 25px;
-  margin: 0 auto;
-
-  box-sizing: border-box;
-  border-radius: 5px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.4;
+    .description {
+        margin-top: 60px;
+        text-align: center;
+        width: 10%;
+        margin-left: -100px;
   
-}
+    }
+    .Home {
+        background-size: 1000px 700px;
+    }
 
-.card:hover {
-    transform: none; /* Remove scaling */
-}
-
-  .card p {
-    font-size: 10px; 
-    text-align: center;
-    margin-bottom: 12px;
-  }
-.card ul{
-    font-size: 10px;
-    padding-left: 20px;    /* indent for bullets */
-    margin-bottom: 12px; 
-}
-.about-container h2{
-    font-size: 21px;
-}
-.card ul li {
-    margin-bottom: 6px;    /* space between list items */
-  }
-}
-
+    /* ===== ABOUT SECTION ===== */
+    .about-container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
     
+    .about-content {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    .left, .right {
+        width: 100% !important;
+        display: block !important;
+    }
+    
+    .card1, .card2, .card3 {
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 30px !important;
+        float: none !important;
+    }
+    
+    .about-img {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 20px !important;
+    }
+    
+    /* Keep your existing card styles */
+    .card1:hover,
+    
+    .card3:hover {
+        transform: none;
+    }
+    .about-section .card2{
+        font-size: 12px;
+    }
+    .card1 p,
+    .card2 p,
+    .card3 p {
+        font-size: 12px;
+        text-align: left;
+        margin-bottom: 18px;
+    }
+
+    .card1 ul,
+    .card3 ul {
+        font-size: 12px;
+        padding-left: 20px;
+        margin-bottom: 12px;
+        text-align: left;
+    }
+
+    .about-container h2 {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    .card1 ul li,
+    .card2 ul li,
+    .card3 ul li {
+        margin-bottom: 8px;
+    }
+
+    .card2,
+    .card3 {
+        margin-top: 0;
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Hide the image on mobile */
+    .about-img {
+        display: none !important;
+    }
+    .skill-category h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .left, .right {
+    width: 100% !important;
+    display: block !important;
+    float: none !important;
+  }
+  
+  .card1, .card2, .card3 {
+    width: 100% !important;
+    display: block !important;
+    margin: 0 0 30px 0 !important;
+    float: none !important;
+    clear: both !important;
+  }
+}
+
+    /* footer*/
 .footer {
     width: 100%;
     text-align: center;

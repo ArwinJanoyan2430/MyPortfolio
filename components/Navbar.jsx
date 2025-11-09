@@ -37,7 +37,7 @@ const Navbar = () => {
     >
       <div className="hcontainer">
         <h1>ARWIN JANOYAN</h1>
-        <p className="title">PORTFOLIO</p>
+        <p className="title">BSIT Student | Web Developer & Virtual Assistant</p>
       </div>
 
       <nav>

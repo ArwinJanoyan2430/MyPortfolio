@@ -7,74 +7,86 @@ function AboutMe() {
   return (
     <section className="about-section" id="about">
       <div className="about-container">
-        <h2>About Me</h2>
-        <div className = "about-content">
-          <div className = "left">
-            <div className="card">
-
-              {/* Intro */}
-              <p className = "paragraph">
-                Hi! I'm <strong>Arwin Janoyan</strong>, a BSIT student, aspiring web
-                developer, and growing Virtual Assistant dedicated to helping clients
-                stay organized and productive. I enjoy solving problems and creating
-                smooth, user-focused digital experiences.
+        <h2>ABOUT ME</h2>
+        <div className="about-content">
+          <div className="left">
+            <div className="card1">
+              <p className="paragraph">
+                <strong>Hi, I'm Arwin Janoyan</strong>, a BSIT student and full-stack developer 
+                who builds digital solutions that actually work for your business. I combine 
+                current technical expertise with a focus on delivering real results.
               </p>
 
-              {/* What I Do */}
-              <p className = "paragraph">
-                As a Virtual Assistant, I support clients with administrative tasks,
-                email and calendar management, online research, data entry, and simple
-                content creation. On the technical side, I work with{" "}
-                <strong>React</strong>, <strong>JavaScript</strong>, and modern tools
-                to build clean and responsive web pages. 
+              <p className="paragraph">
+                I bring <strong>fresh perspectives</strong> and <strong>modern development skills</strong> to every project. 
+                While I'm early in my career, I offer dedicated attention and the latest 
+                industry knowledge that can give your business a competitive edge.
               </p> 
-              <ul className = "paragraph">
-                My skill set includes:
-                <li>• Google Workspace</li>
-                <li>• Google Sheets</li>
-                <li>• social media planning</li>
-                <li>• basic website editing</li>
-                <li>• Microsoft Office</li>
-                <li>• Canva</li>
-                <li>• strong communication</li>
-                <li>• organization</li>
-                <li>• attention to detail</li>
-                <li className = "space">-</li>
-              </ul>
-              
-
-              {/* Why Clients Choose Me */}
-              <p className = "paragraph">
-                Clients appreciate my reliability, fast learning, and commitment to
-                delivering organized, efficient, and high-quality results. I focus on
-                making tasks easier and ensuring smooth workflows.
-              </p>
-
-              {/* Background */}
-              <p className = "paragraph">
-                Coming from an IT background, I enjoy combining tech skills with
-                administrative work-giving clients both creative and structured
-                solutions.
-              </p>
-
-              {/* CTA */}
-              <p className = "paragraph">
-                I'm excited to work with individuals and businesses who need a
-                dependable VA or web support partner. Feel free to reach out, I’d be
-                happy to help.
-              </p>
-
+            </div>
+            
+            <div className="card2">
+              <p className="offer"><strong>What I Offer:</strong></p>
+              <div className="skills-grid">
+                <div className="skill-category1">
+                  <h4>Technical Expertise</h4>
+                  <ul className="bullet">
+                    <li><strong>• React & JavaScript</strong> – Interactive, modern web applications</li>
+                    <li><strong>• Full-Stack Development</strong> – Complete end-to-end solutions</li>
+                    <li><strong>• Responsive Design</strong> – Flawless experience on all devices</li>
+                  </ul>
+                </div>
+                <br/>
+                <div className="skill-category2">
+                  <h4>Professional Strengths</h4>
+                  <ul className="bullet">
+                    <li><strong>• Quick Adaptation</strong> – Learn and implement new requirements rapidly</li>
+                    <li><strong>• Quality Focus</strong> – Clean code and thorough testing</li>
+                    <li><strong>• Clear Communication</strong> – Regular updates in plain language</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-            {/* RIGHT SIDE – IMAGE */}
+        
+          <div className="right">
+            <Image
+              src={profile2}
+              alt="Arwin Janoyan - Web Developer"
+              width={390} 
+              height={100} 
+              className="about-img"
+            />
+            <div className="card3">
+              <p className="paragraph">
+                <strong>The advantage of working with emerging talent?</strong> You get 
+                <strong> dedicated focus</strong> and <strong>innovative approaches</strong> without the senior-level price tag. 
+                I'm motivated to prove myself by delivering exceptional value.
+              </p>
 
-              <div className="right">
-                <Image
-                  src={profile2}
-                  alt="profile2"
-                  width={600} height={600}
-                  className="about-img"
-                />
+              <p className="paragraph">
+                I treat every project as an opportunity to build something meaningful. 
+                You're not just getting a developer – you're getting a partner who's 
+                committed to understanding your business and delivering solutions that matter.
+              </p>
+
+              <p className="paragraph">
+                <strong>Here's how I ensure your success:</strong>
+              </p>
+              
+              <ul className="paragraph">
+                <li><strong>Deep dive into your business</strong> – I learn your industry and goals</li>
+                <li><strong>Transparent process</strong> – You're involved at every stage</li>
+                <li><strong>Adaptive approach</strong> – I tailor solutions to your specific needs</li>
+                <li><strong>Results-driven mindset</strong> – Every feature serves a purpose</li>
+              </ul>
+              <p> </p>
+              <p className="paragraph">
+                Ready to work with a developer who'll give your project the attention it deserves? 
+                 <a href="#contact" 
+                onClick={(e) => {e.preventDefault(); alert("Contact section is coming soon!");}}
+                ><strong className = "underline"> Let's create something amazing together!</strong></a></p>
+              
+            </div>
           </div>
         </div>
       </div>
