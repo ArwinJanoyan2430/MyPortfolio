@@ -350,18 +350,18 @@ li a:hover {
     }
     
     h1 {
-        font-size: 23px;
+        font-size: 26px;
     }
     
     .title {
         text-align: center;
         margin-top: -8px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     
     nav ul {
         gap: 15px;
-        font-size: 10px;
+        font-size: 15px;
         margin: 10px 0;
         padding: 0;
         flex-wrap: wrap;
@@ -381,12 +381,13 @@ li a:hover {
 
     /* ===== HOME SECTION ===== */
     .flex-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 10px;
         margin: 0;
         text-align: center;
     }
+
 
     .profile {
         width: 140px;
@@ -397,14 +398,18 @@ li a:hover {
         filter: brightness(0.8);
         
     }
+    .profile:hover {
+    box-shadow: 0 0 50px rgb(0, 153, 255);
+}
 
     .typing-text {
-        font-size: 1rem;
+        font-size: 1.5rem;
         height: 200px;
         text-align: center;
         align-items: center;
         width: 200px;
-        margin-top: -250;
+        margin-top: 160px;
+        position: fixed;
     }
 
     .text-container {
@@ -414,10 +419,10 @@ li a:hover {
         
     }
     .description {
-        margin-top: 60px;
+        margin-top: 300px;
         text-align: center;
         width: 10%;
-        margin-left: -100px;
+        margin-left: -130px;
   
     }
     .Home {

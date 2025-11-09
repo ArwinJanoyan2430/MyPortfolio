@@ -20,7 +20,7 @@ function Body() {
             </h1>
             
               <p className="description" style={{ color: '#ffffff', textAlign: 'center' }}>
-                Your friendly tech expert who speaks both 'code' and 'client' -<br />
+                Your friendly tech expert who speaks both 'code' and 'client' <br />
                 turning complex problems into simple, working solutions.
               </p>
             
