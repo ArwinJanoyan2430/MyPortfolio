@@ -43,11 +43,7 @@ const Navbar = () => {
       <nav>
         <ul>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#projects"
-        onClick={(e) => {
-          e.preventDefault();
-          alert("Projects section is coming soon!");
-        }}>PROJECTS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#contact"
         onClick={(e) => {
           e.preventDefault(); // prevent default navigation

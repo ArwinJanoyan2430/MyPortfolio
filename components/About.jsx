@@ -12,15 +12,14 @@ function AboutMe() {
           <div className="left">
             <div className="card1">
               <p className="paragraph">
-                <strong>Hi, I'm Arwin Janoyan</strong>, a BSIT student and full-stack developer 
-                who builds digital solutions that actually work for your business. I combine 
-                current technical expertise with a focus on delivering real results.
+                <strong>Hi, I'm Arwin Janoyan</strong>, a BSIT student and full-stack developer who builds digital solutions that drive business results. 
+                I combine cutting-edge technical skills with a practical understanding of what makes businesses successful online.
               </p>
 
               <p className="paragraph">
                 I bring <strong>fresh perspectives</strong> and <strong>modern development skills</strong> to every project. 
-                While I'm early in my career, I offer dedicated attention and the latest 
-                industry knowledge that can give your business a competitive edge.
+                While building my professional experience, I offer dedicated attention and current 
+                industry knowledge that can give your business a competitive advantage.
               </p> 
             </div>
             
@@ -33,15 +32,17 @@ function AboutMe() {
                     <li><strong>• React & JavaScript</strong> – Interactive, modern web applications</li>
                     <li><strong>• Full-Stack Development</strong> – Complete end-to-end solutions</li>
                     <li><strong>• Responsive Design</strong> – Flawless experience on all devices</li>
+                    <li><strong>• Modern Practices</strong> – Clean code and scalable architecture</li>
                   </ul>
                 </div>
                 <br/>
                 <div className="skill-category2">
                   <h4>Professional Strengths</h4>
                   <ul className="bullet">
-                    <li><strong>• Quick Adaptation</strong> – Learn and implement new requirements rapidly</li>
-                    <li><strong>• Quality Focus</strong> – Clean code and thorough testing</li>
-                    <li><strong>• Clear Communication</strong> – Regular updates in plain language</li>
+                    <li><strong>• Quick Adaptation</strong> – Rapidly learn and implement new requirements</li>
+                    <li><strong>• Quality Focus</strong> – Thorough testing and attention to detail</li>
+                    <li><strong>• Clear Communication</strong> – Regular updates in straightforward language</li>
+                    <li><strong>• Reliable Execution</strong> – Committed to deadlines and deliverables</li>
                   </ul>
                 </div>
               </div>
@@ -74,10 +75,10 @@ function AboutMe() {
               </p>
               
               <ul className="paragraph">
-                <li><strong>Deep dive into your business</strong> – I learn your industry and goals</li>
-                <li><strong>Transparent process</strong> – You're involved at every stage</li>
-                <li><strong>Adaptive approach</strong> – I tailor solutions to your specific needs</li>
-                <li><strong>Results-driven mindset</strong> – Every feature serves a purpose</li>
+                <li><strong>Deep Business Understanding</strong> – I learn your industry, goals, and challenges</li>
+                <li><strong>Transparent process</strong> – You're involved and informed at every stage  </li>
+                <li><strong>Adaptive approach</strong> – Tailored approaches for your specific needs</li>
+                <li><strong>Results-driven mindset</strong> – Every feature serves a clear purpose</li>
               </ul>
               <p> </p>
               <p className="paragraph">

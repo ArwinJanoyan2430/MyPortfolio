@@ -26,7 +26,9 @@ function Body() {
             
           </div>
         </div>
+        <p className="viewWorks"><a href="#projects">VIEW MY WORKS</a></p>
       </section>
+      
     </main>
   );
 }
