@@ -25,7 +25,7 @@ function Projects(){
                         <p className = "centerthis2">Social Media Brand Strategy  </p>
                         </div>
                         <div className= "works">
-                            <div className= "">   </div>
+                            
                         </div>
                     </div>
                 </div>
