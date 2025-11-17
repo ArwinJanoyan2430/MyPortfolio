@@ -424,14 +424,14 @@ li a:hover {
     width: 180px !important;
     height: 240px !important;
     border-radius: 60px !important;
-    margin-left: -70px;
+    margin-left: -65px;
   }
   
   
   
   .tilted-card-overlay {
     border-radius: 60px !important;
-    margin-left: -70px;
+    margin-left: -65px;
   }
   
   .tilted-card-inner {
@@ -462,7 +462,7 @@ li a:hover {
   .typing-text {
     margin-left: 170px !important;
     width: 100% !important;
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
     margin-top: -230px;
   }
 
