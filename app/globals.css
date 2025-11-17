@@ -19,13 +19,7 @@ html{
 
 }
 
-<<<<<<< HEAD
 /* ===== Header & Navbar ===== */
-=======
-
-
-/* ===== Header & Navbr ===== */
->>>>>>> d5b13e371efba7acec8480893ab5cb7abb05a264
 header {
 
     justify-content: space-between;
@@ -435,14 +429,14 @@ li a:hover {
 
 .tilted-card-img {
     width: 180px !important;
-    height: 260px !important;
+    height: 240px !important;
     border-radius: 60px !important;
     margin-left: -100px;
   }
   
   .tilted-card-inner {
     width: 180px !important;
-    height: 260px !important;
+    height: 240px !important;
     border-radius: 60px !important;
     
   }
@@ -450,7 +444,19 @@ li a:hover {
     border-radius: 60px !important;
     margin-left: -100px;
   }
-
+.tilted-card-inner {
+    transform: none !important;
+  }
+  
+  .tilted-card-img:hover {
+    transform: none !important;
+    animation: none !important;
+  }
+  
+  /* Also disable the caption/tooltip on mobile */
+  .tilted-card-caption {
+    display: none !important;
+  }
     .typing-text {
         font-size: 1.5rem;
         height: 100px;
@@ -460,7 +466,7 @@ li a:hover {
         margin-top: 160px;
         position: fixed;
         left: 55%;
-        top: 13%;
+        top: 18%;
     }
 
     .text-container {
