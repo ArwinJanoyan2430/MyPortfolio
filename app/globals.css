@@ -442,7 +442,19 @@ li a:hover {
     transform: none !important;
     animation: none !important;
   }
+  .card-overlay {
+    background: rgba(0, 0, 0, 0.719) !important;
+  }
   
+  .card-content {
+    background: #dddddd67 !important;
+    color: white !important;
+    border: 2px solid #00e1ff !important;
+  }
+  
+  .scrollable-content {
+    background: transparent !important;
+  }
   .tilted-card-caption {
     display: none !important;
   }
@@ -516,9 +528,12 @@ li a:hover {
     width: 60px !important;
     order: -1; /* Ensure it stays at top */
   }
- 
   .logodisplay {
+    visibility: hidden !important;
     display: none !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
   }
   .centerthis1 {
     margin-top: 0 !important;
