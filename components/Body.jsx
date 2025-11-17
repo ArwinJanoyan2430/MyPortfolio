@@ -30,11 +30,16 @@ function Body() {
               fontSize: '1.25rem', 
               fontWeight: 'bold',
               textAlign: 'center',
-              margin: 0
+              margin: '0px',
+              position: 'absolute',
+              top: '10px',
+              left: '0',
+              right: '0',
+              width: '100%'
             }}>
               
-              </p>
-            }
+            </p>
+          }
           />
           <div className="text-container">
             <h1 className="typing-text">

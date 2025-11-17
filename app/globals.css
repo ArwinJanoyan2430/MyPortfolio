@@ -418,33 +418,23 @@ li a:hover {
     }
     
     /* ===== HOME SECTION ===== */
-    .flex-container {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        margin: 0;
-        text-align: center;
-        margin-top: -100px;
-    }
+    
 
-.tilted-card-img {
+.tilted-card-img, .tilted-card-inner {
     width: 180px !important;
     height: 240px !important;
     border-radius: 60px !important;
-    margin-left: -100px;
+    margin-left: -70px;
+  }
+  
+  
+  
+  .tilted-card-overlay {
+    border-radius: 60px !important;
+    margin-left: -70px;
   }
   
   .tilted-card-inner {
-    width: 180px !important;
-    height: 240px !important;
-    border-radius: 60px !important;
-    
-  }
-.tilted-card-overlay {
-    border-radius: 60px !important;
-    margin-left: -100px;
-  }
-.tilted-card-inner {
     transform: none !important;
   }
   
@@ -453,39 +443,33 @@ li a:hover {
     animation: none !important;
   }
   
-  /* Also disable the caption/tooltip on mobile */
   .tilted-card-caption {
     display: none !important;
   }
-    .typing-text {
-        font-size: 1.5rem;
-        height: 100px;
-        text-align: center;
-        align-items: center;
-        width: 200px;
-        margin-top: 160px;
-        position: fixed;
-        left: 55%;
-        top: 18%;
-    }
-
-    .text-container {
-        max-width: 60%;
-        text-align: center;
-        align-items: center;
-
-    }
-   
-    .description {
-        
-    text-align: center !important;
-    margin-left: -310px !important;
-    margin-right: auto !important;
-    display: block !important;
-    width: 100% !important;
-    max-width: 0px !important;
-    margin-top: 350px;
+  
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    
   }
+
+  .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* FIX THIS LINE - Remove the large margin-left */
+  .typing-text {
+    margin-left: 170px !important;
+    width: 100% !important;
+    font-size: 1.5rem !important;
+    margin-top: -230px;
+  }
+
+  .description {
+    margin-top: -20px;
+  }
+
     .scrollable-content .logodisplay{
         height: 12%;
         width: 20%;
@@ -524,7 +508,7 @@ li a:hover {
     }
     .calendar{
         width: 100%;
-        height: 20%;
+        height: 15%;
     }
    
     /* Keep your existing card styles */
