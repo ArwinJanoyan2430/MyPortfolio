@@ -325,3 +325,15 @@
 .img-card:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
+/* KILL THE WHITE BACKGROUND */
+.card-content {
+  background: #000000 !important;
+}
+
+.card-overlay {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+.scrollable-content {
+  background: transparent !important;
+}

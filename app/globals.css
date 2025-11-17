@@ -424,14 +424,14 @@ li a:hover {
     width: 180px !important;
     height: 240px !important;
     border-radius: 60px !important;
-    margin-left: -65px;
+    margin-left: -75px;
   }
   
   
   
   .tilted-card-overlay {
     border-radius: 60px !important;
-    margin-left: -65px;
+    margin-left: -75px;
   }
   
   .tilted-card-inner {
@@ -462,7 +462,7 @@ li a:hover {
   .typing-text {
     margin-left: 170px !important;
     width: 100% !important;
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
     margin-top: -230px;
   }
 
@@ -590,13 +590,31 @@ li a:hover {
     max-width: 300px;
   }
 
-  .card-content {
-    padding: 20px;
+  
+  body, html {
+    overflow-x: hidden !important;
+    background: #000000 !important;
   }
+  
+  .card-overlay, .card-content {
+    overflow-x: hidden !important;
+    background: #000000 !important;
+  }
+  
+  /* Prevent horizontal scrolling */
+  .scrollable-content {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Fix any overflowing elements */
+  .calendar, .img-card, .side-by-side-container {
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+  
 
-  .title-projects {
-    font-size: 2rem;
-  }
+  
 }
 
     /* footer*/
