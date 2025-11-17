@@ -19,7 +19,13 @@ html{
 
 }
 
+<<<<<<< HEAD
 /* ===== Header & Navbar ===== */
+=======
+
+
+/* ===== Header & Navbr ===== */
+>>>>>>> d5b13e371efba7acec8480893ab5cb7abb05a264
 header {
 
     justify-content: space-between;
