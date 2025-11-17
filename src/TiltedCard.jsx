@@ -52,8 +52,8 @@ export default function TiltedCard({
     rotateX.set(rotationX);
     rotateY.set(rotationY);
 
-    x.set(e.clientX - rect.left);
-    y.set(e.clientY - rect.top);
+    x.set(e.clientX - rect.left - 60);
+    y.set(e.clientY - rect.top - 120);
 
     const velocityY = offsetY - lastY;
     rotateFigcaption.set(-velocityY * 0.6);

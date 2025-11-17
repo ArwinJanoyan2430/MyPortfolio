@@ -427,17 +427,34 @@ li a:hover {
         margin-top: -100px;
     }
 
-
-
+.tilted-card-img {
+    width: 180px !important;
+    height: 260px !important;
+    border-radius: 60px !important;
+    margin-left: -100px;
+  }
+  
+  .tilted-card-inner {
+    width: 180px !important;
+    height: 260px !important;
+    border-radius: 60px !important;
+    
+  }
+.tilted-card-overlay {
+    border-radius: 60px !important;
+    margin-left: -100px;
+  }
 
     .typing-text {
         font-size: 1.5rem;
-        height: 200px;
+        height: 100px;
         text-align: center;
         align-items: center;
         width: 200px;
         margin-top: 160px;
         position: fixed;
+        left: 55%;
+        top: 13%;
     }
 
     .text-container {
@@ -446,13 +463,17 @@ li a:hover {
         align-items: center;
 
     }
+   
     .description {
-        margin-top: 300px;
-        text-align: center;
-        width: 10%;
-        margin-left: -130px;
-
-    }
+        
+    text-align: center !important;
+    margin-left: -310px !important;
+    margin-right: auto !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 0px !important;
+    margin-top: 350px;
+  }
     .scrollable-content .logodisplay{
         height: 12%;
         width: 20%;
