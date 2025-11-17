@@ -1,8 +1,8 @@
 "use client";
 import "../app/globals.css";
-
 import Image from "next/image";
 import profile from "../assets/profile.png";
+import TiltedCard from '../src/TiltedCard.jsx';
 
 function Body() {
 
@@ -10,7 +10,32 @@ function Body() {
     <main>
       <section className="Home">
         <div className="flex-container">
-          <Image src={profile} alt="Profile Picture" width={310} height={410} className="profile" />
+          <TiltedCard
+          className="profile"
+            imageSrc={profile.src}
+            altText="Arwin Janoyan"
+            captionText="Arwin Janoyan"
+            containerHeight="300px"
+            containerWidth="300px"
+            imageHeight="410px"
+            imageWidth="310px"
+            rotateAmplitude={20}
+            scaleOnHover={1.1}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={true}
+            overlayContent={
+            <p style={{ 
+              color: 'white', 
+              fontSize: '1.25rem', 
+              fontWeight: 'bold',
+              textAlign: 'center',
+              margin: 0
+            }}>
+              
+              </p>
+            }
+          />
           <div className="text-container">
             <h1 className="typing-text">
               <span>I'm a <br></br>Web Developer.</span>
