@@ -24,9 +24,14 @@ function Projects(){
                 <div className="card-overlay">
                     <div className="card-content">
                         <button className="close-btn" onClick={toggleCard}>×</button>
+                        
+                            
+                        
+                            
+                        
                         <div className="scrollable-content">
                             <Image src={logo} alt="display" width={80} height={80} className="logodisplay"/>
-                        <h3 className = "centerthis1">Pour Decisions Coffee</h3>
+                            <h2 className="centerthis1">Pour Decisions Coffee Shop</h2>
                         <p className = "centerthis2">Social Media Brand Strategy </p>
                         <br></br>
 
