@@ -1,0 +1,109 @@
+.tilted-card-figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.tilted-card-inner {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.tilted-card-img {
+  object-fit: cover;
+  border-radius: 90px;
+  border: 1px solid #00e1ff;
+  box-shadow: 
+    0 0 10px #00e1ff,
+    0 0 20px #00e1ff,
+    0 0 40px #00e1ff;
+  animation: electric-pulse 2s infinite;
+  transition: transform 0.7s ease, box-shadow 0.3s ease;
+}
+
+@keyframes electric-pulse {
+  0%, 100% {
+    border-color: #00e1ff;
+    box-shadow: 
+      0 0 10px #00e1ff,
+      0 0 20px #00e1ff,
+      0 0 40px #00e1ff;
+  }
+  50% {
+    border-color: #ffffff;
+    box-shadow: 
+      0 0 15px #00e1ff,
+      0 0 30px #00e1ff,
+      0 0 60px #00e1ff;
+  }
+}
+
+.tilted-card-img:hover {
+  transform: scale(1.05);
+  animation: electric-hover 0.5s infinite alternate;
+}
+
+@keyframes electric-hover {
+  0% {
+    box-shadow: 
+      0 0 15px #00e1ff,
+      0 0 30px #00e1ff,
+      0 0 60px #00e1ff;
+    border-color: #00e1ff;
+  }
+  100% {
+    box-shadow: 
+      0 0 20px #00e1ff,
+      0 0 40px #00e1ff,
+      0 0 80px #00e1ff;
+    border-color: #ffffff;
+  }
+}
+
+.tilted-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(34, 1, 1, 0);
+  color: white;
+  border-radius: 90px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: #ffffff solid 5px;
+}
+
+.tilted-card-caption {
+  position: absolute;
+  pointer-events: none;
+  background: rgb(194, 194, 194);
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 10;
+  font-weight: 500;
+}
+
+.tilted-card-mobile-alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ff4757;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  z-index: 100;
+  border-radius: 8px 8px 0 0;
+}
+
