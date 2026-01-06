@@ -83,6 +83,7 @@ function Projects() {
                       />
                     </div>
                     <div className="face back">
+
                       <p>
                         Created a structured file management system using folders, naming conventions, 
                         and categorization to improve document accessibility and workflow efficiency.

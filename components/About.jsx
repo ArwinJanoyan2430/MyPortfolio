@@ -1,6 +1,7 @@
 import "../app/globals.css";
 import React from "react";
-
+import profile2 from "../assets/profile2.png"
+import Image from "next/image";
 
 function AboutMe() {
   return (
@@ -49,12 +50,17 @@ function AboutMe() {
           </div>
         
           <div className="right">
-            
+            <Image
+              src={profile2}
+              alt="Arwin Janoyan - Web Developer"
+              width={390} 
+              height={100} 
+              className="about-img"
+            />
             <div className="card3">
               <p className="paragraph">
-                <strong>The advantage of working with emerging talent?</strong> You get 
-                <strong> dedicated focus</strong> and <strong>innovative approaches</strong> without the senior-level price tag. 
-                I'm motivated to prove myself by delivering exceptional value.
+                As a student developer,
+              I'm motivated to prove myself by delivering exceptional value.
               </p>
 
               <p className="paragraph">
